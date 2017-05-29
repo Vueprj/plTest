@@ -1,19 +1,10 @@
 <?php
-namespace app\index\Controller;
+namespace app\laught\Controller;
 use\think\Controller;
 use think\Db;
 
-class Index extends Controller
+class Laught extends Controller
 {
-    public function index()
-    {
-      $data=Db::table('tb_laught')->where('id',1)->select();
-      var_dump($data);
-    }
-    public function delete()
-    {
-
-    }
     //查找笑话
     public function find()
     {

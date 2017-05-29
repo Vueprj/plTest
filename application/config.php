@@ -139,7 +139,15 @@ return [
     ],
 
     // 视图输出字符串内容替换
-    'view_replace_str'       => [],
+    'view_replace_str'       => [
+        '__CSS__'=>'/plTest/public/static/css',
+        '__JS__'=>'/plTest/public/static/js',
+        '__img__'=>'/plTest/public/static/img',
+        '__plugins__'=>'/plTest/public/static/plugins',
+        '__fonts__'=>'/plTest/public/static/fonts',
+        '__PUBLIC__'=>'/public/',
+        '__ROOT__' => '/',
+    ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
